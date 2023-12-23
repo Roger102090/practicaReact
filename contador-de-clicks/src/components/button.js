@@ -1,9 +1,12 @@
-import React from React;
+import React from 'react';
+import '../style/button.css';
 
-function button({text, esBotonDeClick}) {
+function Button1({text, esBotonDeClick, manejarClick}) {
     return(
-        <button className={esBotonDeClick ? 'botonClick' : 'botonReiniciar' }>
+        <button className={esBotonDeClick ? 'botonClick' : 'botonReiniciar' }
+        onClick={manejarClick}>
             {text}
         </button>
     )
 }
+export default Button1;

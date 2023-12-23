@@ -15,6 +15,7 @@ html, body {
   justify-content: center;
   padding: 15px;
   font-family: Lato, sans-serif;
+  flex-direction: column;
 }
 
 .cont-img {
@@ -30,5 +31,11 @@ html, body {
 }
 
 .cont-contador {
-
+  height: 550px;
+  min-width:600px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
