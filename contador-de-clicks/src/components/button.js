@@ -1,8 +1,8 @@
 import React from React;
 
-function button({text}) {
+function button({text, esBotonDeClick}) {
     return(
-        <button className=''>
+        <button className={esBotonDeClick ? 'botonClick' : 'botonReiniciar' }>
             {text}
         </button>
     )
