@@ -3,7 +3,7 @@ import '../style/button.css';
 
 function Button1({text, esBotonDeClick, manejarClick}) {
     return(
-        <button className={esBotonDeClick ? 'botonClick' : 'botonReiniciar' }
+        <button className={ esBotonDeClick ? 'botonClick' : 'botonReiniciar' }
         onClick={manejarClick}>
             {text}
         </button>

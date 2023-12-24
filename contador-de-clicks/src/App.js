@@ -1,16 +1,22 @@
 import logo from './logo.svg';
 import './App.css';
-import Button1 from './components/button'
-import Contador from './components/contador'
+import Button1 from './components/button';
+import Contador from './components/contador';
+import { useState } from 'react';
+//hooks funciones especiales,
+//useState() usar estados en los componentes
 
 function App() {
+  //uso de Hooks, en un arreglo
+  const [numClicks, setNumClicks] = useState(0);
+      //[valorInical, funcion]
 
   const mC = () => {
-      console.log('click');
-  }
+      setNumClicks(numClicks + 1);
+  };
   const bR = () => {
-      console.log('reiniciar');
-  }
+    setNumClicks(0);
+  };
 
   return (
     <div className="App">
@@ -26,7 +32,7 @@ function App() {
     </div>
      <div className='cont-contador'>
      <Contador
-          numClicks = '5'
+          numClicks = {numClicks}
           />
         <Button1 
         text = 'click'
