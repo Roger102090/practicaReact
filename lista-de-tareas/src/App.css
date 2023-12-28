@@ -8,7 +8,39 @@ html body {
   color: white;
   background: #1b1b32;
 }
+h1{
+  color: #1b1b32;
+  font-size: 25px;
+  font-family: Roboto, sans-serif;
+  text-align: center;
+  margin: 20px 0;
+}
 .App {
-  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+/*Logo*/
+.contImg{
+  width: 100%;
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+.img-logo{
+  width: 400px;
+  height: 100px;
+}
+
+/*Lista de tareas*/
+.Tareas-lista{
+  width: 600px;
+  min-height: 500px;
+  background: #d0d0d5;
+  padding: 25px;
+  margin: 10px;
+  border-radius: 26px;
+}
