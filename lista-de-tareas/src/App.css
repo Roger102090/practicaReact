@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html body {
+  color: white;
+  background: #1b1b32;
+}
 .App {
   
 }
